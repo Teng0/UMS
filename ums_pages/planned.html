@@ -12,7 +12,47 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">  
+
+  <style type="text/css">
+    div.col-sm-4, div.col-sm-7{
+      padding: 5px;
+    }
+    div.col-sm-4{
+      text-align: end;
+      margin: 0 5px;
+    }
+    div.card{
+      margin-top: 7.5px;
+      margin-bottom: 7.5px !important;
+    }
+    div.card-deck {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @media (max-width: 1360px){
+      div.card-deck {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+    }
+    @media (max-width: 820px){
+      div.card-deck {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+      div.col-sm-4{
+        text-align: start;
+        margin: 0 5px;
+      }
+      div.col-sm-7{
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -527,470 +567,158 @@ to get the desired effect
     <!-- /.content-header -->
 
 
-    <!-- Main content -->
     <section class="content">
       <div class="row">
         <div class="col-12">
-          <div class="card">
-            <div class="card-header special">
-              <h3 class="card-title">დაგეგმილი</h3>
-              <div class="card-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="ძიება">
-
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                  </div>
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    დასახელება:</div>
+                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+                  <div class="col-sm-4">მდებარეობა:</div>
+                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
+                  <div class="col-sm-4">ტიპი:</div>
+                  <div class="col-sm-7">გზები, მშენებლობა</div>
+                  <div class="col-sm-4">დაწყება/დასასრული:</div>
+                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
+                  <div class="col-sm-4">პროგრამა:</div>
+                  <div class="col-sm-7">WB</div>
+                  <div class="col-sm-4">დონორი:</div>
+                  <div class="col-sm-7">RDP-III</div>
+                  <div class="col-sm-4">სტატუსი:</div>
+                  <div class="col-sm-7">დასრულებული</div>
                 </div>
               </div>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body table-responsive p-0" style="height: 300px;">
-              <table class="table table-head-fixed text-nowrap">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>DOC</th>
-                    <th>სტატუსი</th>
-                    <th>დონორი</th>
-                    <th>პროგრამა</th>
-                    <th>დასახელება</th>
-                    <th>რეგიონი</th>
-                    <th>მუნიციპალიტეტი</th>
-                    <th>ტიპოლოგია</th>
-                    <th>ტიპი</th>
-                    <th>დაწყება</th>
-                    <th>დასრულება</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                  <tr>
-                    <td>0707-0028</td>
-                    <td>DOC</td>
-                    <td>დასრულებული</td>
-                    <td>GOG</td>
-                    <td>GOV-250301</td>
-                    <td>ხობის მუნიციპალიტეტში ქარიატის ადმინისტრაციულ ერთეულის სოფელ გამოღმა ქარიატის გზის რეაბილიტაციის დეტალური საპროექტო-სახარჯთაღრიცხვო დოკუმენტაციის შედგენის მომსახურების შესყიდვა</td>
-                    <td>სამეგრელო-ზემო სვანეთი</td>
-                    <td>ხობი</td>
-                    <td>გზები</td>
-                    <td>პროექტირება</td>
-                    <td>31.10.2018</td>
-                    <td>16.01.2019</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- /.card-body -->
-          </div>
-          <!-- /.card -->
-        </div>
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-12">
-            <div class="card card-primary card-tabs">
-              <div class="card-header p-0 pt-1">
-                <ul class="nav nav-tabs" id="custom-tabs-two-tab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="custom-tabs-two-pay-tab" data-toggle="pill" href="#custom-tabs-two-pay" role="tab" aria-controls="custom-tabs-two-pay" aria-selected="ture">გადახდები</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-years-tab" data-toggle="pill" href="#custom-tabs-two-years" role="tab" aria-controls="custom-tabs-two-years" aria-selected="false">წლების მიხედვით</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-change-tab" data-toggle="pill" href="#custom-tabs-two-change" role="tab" aria-controls="custom-tabs-two-change" aria-selected="false">ღირებულების და ვადის ცვლილება</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-trip-tab" data-toggle="pill" href="#custom-tabs-two-trip" role="tab" aria-controls="custom-tabs-two-trip" aria-selected="false">მივლინება</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-tender-tab" data-toggle="pill" href="#custom-tabs-two-tender" role="tab" aria-controls="custom-tabs-two-tender" aria-selected="false">ტენდერი</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-garanty-tab" data-toggle="pill" href="#custom-tabs-two-garanty" role="tab" aria-controls="custom-tabs-two-garanty" aria-selected="false">გარანტიები</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-responsible-tab" data-toggle="pill" href="#custom-tabs-two-responsible" role="tab" aria-controls="custom-tabs-two-responsible" aria-selected="false">პასუხისმგებელი</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-description-tab" data-toggle="pill" href="#custom-tabs-two-description" role="tab" aria-controls="custom-tabs-two-description" aria-selected="false">პროექტის აღწერა</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-two-details-tab" data-toggle="pill" href="#custom-tabs-two-details" role="tab" aria-controls="custom-tabs-two-details" aria-selected="false">დეტალები</a>
-                  </li>
-                </ul>
+              <div class="card-footer">
+                <small class="text-muted">დაემატა 2 თვის წინ</small>
+                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
               </div>
-              
-            <div class="card-body">
-              <div class="tab-content" id="custom-tabs-two-tabContent">
-                    <!-- გადახდები -->
-                <div class="tab-pane fade active show" id="custom-tabs-two-pay" role="tabpanel" aria-labelledby="custom-tabs-two-pay-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">გადახდები</h3>
-                  </div>
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">    
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>ტიპი</th>
-                          <th>N</th>
-                          <th>თარიღი</th>
-                          <th>წარმოდგენილი</th>
-                          <th>ავანსი</th>
-                          <th>რეზერვი</th>
-                          <th>გადასახდელი</th>
-                          <th>დონორი</th>
-                          <th>სახელმწიფო</th>
-                          <th>მუნიციპალიტეტი</th>
-                          <th>გადახდილი</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>შსა</td>
-                          <td>01</td>
-                          <td>12.12.2018</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                        </tr>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>შსა</td>
-                          <td>01</td>
-                          <td>12.12.2018</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                        </tr>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>შსა</td>
-                          <td>01</td>
-                          <td>12.12.2018</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                          <td>0,00</td>
-                          <td>6 400,00</td>
-                        </tr>
-                      </tbody>
-                    </table>      
-                  </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    დასახელება:</div>
+                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+                  <div class="col-sm-4">მდებარეობა:</div>
+                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
+                  <div class="col-sm-4">ტიპი:</div>
+                  <div class="col-sm-7">გზები, მშენებლობა</div>
+                  <div class="col-sm-4">დაწყება/დასასრული:</div>
+                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
+                  <div class="col-sm-4">პროგრამა:</div>
+                  <div class="col-sm-7">WB</div>
+                  <div class="col-sm-4">დონორი:</div>
+                  <div class="col-sm-7">RDP-III</div>
+                  <div class="col-sm-4">სტატუსი:</div>
+                  <div class="col-sm-7">დასრულებული</div>
                 </div>
-                <div class="tab-pane fade" id="custom-tabs-two-years" role="tabpanel" aria-labelledby="custom-tabs-two-years-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">გადახდები წლების მიხედვით</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">   
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>წელი</th>
-                          <th>დონორი</th>
-                          <th>სახელმწიფო</th>
-                          <th>მინიპალიტეტი</th>
-                          <th>მგფ</th>
-                          <th>სულ</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>0301-0076</td>
-                          <td>2020</td>
-                          <td>1 881 087,78  </td>
-                          <td>338 595,80  </td>
-                          <td>0,00</td>
-                          <td>0,00</td>
-                          <td>2 219 683,58  </td>
-                        </tr>
-                        <tr>
-                          <td>0301-0076 </td>
-                          <td>2019</td>
-                          <td>2 290 985,13</td>
-                          <td>412 377,32  </td>
-                          <td>0,00</td>
-                          <td>0,00</td>
-                          <td>2 703 362,45</td>
-                        </tr>
-                      </tbody>
-                    </table>      
-                  </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">დაემატა 2 თვის წინ</small>
+                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    დასახელება:</div>
+                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+                  <div class="col-sm-4">მდებარეობა:</div>
+                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
+                  <div class="col-sm-4">ტიპი:</div>
+                  <div class="col-sm-7">გზები, მშენებლობა</div>
+                  <div class="col-sm-4">დაწყება/დასასრული:</div>
+                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
+                  <div class="col-sm-4">პროგრამა:</div>
+                  <div class="col-sm-7">WB</div>
+                  <div class="col-sm-4">დონორი:</div>
+                  <div class="col-sm-7">RDP-III</div>
+                  <div class="col-sm-4">სტატუსი:</div>
+                  <div class="col-sm-7">დასრულებული</div>
                 </div>
-                <div class="tab-pane fade" id="custom-tabs-two-change" role="tabpanel" aria-labelledby="custom-tabs-two-change-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">ღირებულების და ვადის ცვლილება</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>ცლილებები</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>NO DATA YET</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">დაემატა 2 თვის წინ</small>
+                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    დასახელება:</div>
+                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+                  <div class="col-sm-4">მდებარეობა:</div>
+                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
+                  <div class="col-sm-4">ტიპი:</div>
+                  <div class="col-sm-7">გზები, მშენებლობა</div>
+                  <div class="col-sm-4">დაწყება/დასასრული:</div>
+                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
+                  <div class="col-sm-4">პროგრამა:</div>
+                  <div class="col-sm-7">WB</div>
+                  <div class="col-sm-4">დონორი:</div>
+                  <div class="col-sm-7">RDP-III</div>
+                  <div class="col-sm-4">სტატუსი:</div>
+                  <div class="col-sm-7">დასრულებული</div>
                 </div>
-                <div class="tab-pane fade" id="custom-tabs-two-trip" role="tabpanel" aria-labelledby="custom-tabs-two-trip-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">მივლინება</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>ზედამხედველი</th>
-                          <th>ტელეფონი</th>
-                          <th>მივლ. დაწყება</th>
-                          <th>მივლ. დასრულება</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>NO DATA YET</td>
-                          <td>NO DATA YET</td>
-                          <td>NO DATA YET</td>
-                          <td>NO DATA YET</td>
-                          <td>NO DATA YET</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">დაემატა 2 თვის წინ</small>
+                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    დასახელება:</div>
+                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+                  <div class="col-sm-4">მდებარეობა:</div>
+                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
+                  <div class="col-sm-4">ტიპი:</div>
+                  <div class="col-sm-7">გზები, მშენებლობა</div>
+                  <div class="col-sm-4">დაწყება/დასასრული:</div>
+                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
+                  <div class="col-sm-4">პროგრამა:</div>
+                  <div class="col-sm-7">WB</div>
+                  <div class="col-sm-4">დონორი:</div>
+                  <div class="col-sm-7">RDP-III</div>
+                  <div class="col-sm-4">სტატუსი:</div>
+                  <div class="col-sm-7">დასრულებული</div>
                 </div>
-                <div class="tab-pane fade" id="custom-tabs-two-tender" role="tabpanel" aria-labelledby="custom-tabs-two-tender-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">ტენდერი</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>გამოცხადების თარიღი</th>
-                          <th>მიღების დაწყება</th>
-                          <th>მიღების დასრულება</th>
-                          <th>ტენდერის გახსნა</th>
-                          <th>გახსნის ადგილი</th>
-                          <th>შეფასების თარიღი</th>
-                          <th>SPA LINK</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>28.09.2018</td>
-                          <td>07.10.2018</td>
-                          <td>10.10.2018</td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td><a href="https://tenders.procurement.gov.ge/public/?go=280332&lang=ge">ბმული</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">დაემატა 2 თვის წინ</small>
+                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    დასახელება:</div>
+                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
+                  <div class="col-sm-4">მდებარეობა:</div>
+                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
+                  <div class="col-sm-4">ტიპი:</div>
+                  <div class="col-sm-7">გზები, მშენებლობა</div>
+                  <div class="col-sm-4">დაწყება/დასასრული:</div>
+                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
+                  <div class="col-sm-4">პროგრამა:</div>
+                  <div class="col-sm-7">WB</div>
+                  <div class="col-sm-4">დონორი:</div>
+                  <div class="col-sm-7">RDP-III</div>
+                  <div class="col-sm-4">სტატუსი:</div>
+                  <div class="col-sm-7">დასრულებული</div>
                 </div>
-                <div class="tab-pane fade" id="custom-tabs-two-garanty" role="tabpanel" aria-labelledby="custom-tabs-two-garanty-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">გარანტიები</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>გარანტიები</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>NO DATA YET</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
-                </div>
-                <div class="tab-pane fade" id="custom-tabs-two-responsible" role="tabpanel" aria-labelledby="custom-tabs-two-responsible-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">პასუხისმგებელი</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>PRJ Code</th>
-                          <th>სამსახური</th>
-                          <th>გვარი, სახელი</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>პროგრამის კოორდინატორი</td>
-                          <td>დევიძე აკაკი</td>
-                        </tr>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>პროგრამის კოორდინატორი</td>
-                          <td>დევიძე აკაკი</td>
-                        </tr>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>პროგრამის კოორდინატორი</td>
-                          <td>დევიძე აკაკი</td>
-                        </tr>
-                        <tr>
-                          <td>0707-0028</td>
-                          <td>პროგრამის კოორდინატორი</td>
-                          <td>დევიძე აკაკი</td>
-                        </tr>                        
-                      </tbody>
-                    </table>
-                  </div> 
-                </div>
-                <div class="tab-pane fade" id="custom-tabs-two-description" role="tabpanel" aria-labelledby="custom-tabs-two-description-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">პროექტის აღწერა</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>სამუშაოების აღწერა</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Work Description</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
-                </div>
-                <div class="tab-pane fade" id="custom-tabs-two-details" role="tabpanel" aria-labelledby="custom-tabs-two-details-tab">
-                  <div class="card-header">
-                    <h3 class="card-title">დეტალები</h3>
-                  </div> 
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>დეტალები</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>NO DATA YET</td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> 
-                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">დაემატა 2 თვის წინ</small>
+                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
               </div>
             </div>
           </div>
@@ -1000,6 +728,7 @@ to get the desired effect
     </section>
     <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
   <footer class="main-footer">
     <strong>Copyright &copy; 2020 <a href="http://mi-un.ge/ums/">Mi-Un.Ge</a>.</strong>
     All rights reserved.
