@@ -7,6 +7,7 @@
   <title>UMS | Dashboard</title>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- IonIcons -->
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
@@ -527,166 +528,480 @@ to get the desired effect
       </div><!-- /.container-fluid -->
     </section>
 
-    <!-- Main content -->
-    <section class="content">
+
+
+
+<!--დასაწყისი ფილტრი -->
+<section id="filter">
+  <div class="container-fluid">
+    <div class="row  align-items-center justify-content-center">
+
+          <div class="col-lg-2 col-md-2 col-sm-12 mb-2 mb-lg-0">
+                <input type="date" name="">
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-2 mb-lg-0">
+            <div class="inner">
+              <select>
+               <option>რეგიონი</option>
+                <option>მცხეთა</option>
+                 <option>მცხეთა</option>
+                  <option>მცხეთა</option>
+                   <option>მცხეთა</option>
+                    <option>მცხეთა</option>
+                     <option>მცხეთა</option>
+                      <option>მცხეთა</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-2 mb-lg-0">
+            <div class="inner">
+              <select>
+               <option>მუნიციპალიტეტი</option>
+                <option>მცხეთა-მთიანეთი</option>
+                 <option>მცხეთა-მთიანეთი</option>
+                  <option>მცხეთა-მთიანეთი</option>
+                   <option>მცხეთა-მთიანეთი</option>
+                    <option>მცხეთა-მთიანეთი</option>
+                     <option>მცხეთა-მთიანეთი</option>
+                      <option>მცხეთა-მთიანეთი</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 mb-2 mb-lg-0">
+             <div class="inner">
+              <select>
+               <option>სტატუსი</option>
+                <option>მიმდინარე</option>
+                 <option>შეწყვეტილი</option>
+                   <option>დასრულებული</option>
+              </select>
+            </div>
+          </div>
+           <div class="col-lg-2 col-md-12 col-sm-12">
+            <button>ძებნა</button>
+           </div>
+          </div>
+  </div>
+</section>
+<!--დასასრული ფილტრი -->
+
+ <!-- დასაწყისი - პროექტების ჩამონათვალი -->
+<div id="accordion">
+
+<!-- პირველი პროექტი -->
+  <div class="card">
+  <div class="card-header collapsed currentProject"  data-toggle="collapse" data-target="#project_1">
+       <div class="card_title d-flex flex-row px-3 py-2">
+        <div class="project_id">
+          <p>ID:</p>
+          <span>0301-0076</span>
+        </div>
+
+        <div class="project_status ml-5 d-flex flex-row">
+          <p>სტატუსი:</p>
+          <span>მიმდინარე პროექტი</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="project_1" class="collapse"  data-parent="#accordion">
+            <div class="card-body">
+        <div class="card-row">
+                <h6>ID:</h6>
+                <p>0301-0076</p>
+              </div>
+              <div class="card-row">
+                <h6>DOC:</h6>
+                <p>DOC</p>
+              </div>
+              <div class="card-row">
+                <h6>სტატუსი:</h6>
+                <p>მიმდინარე</p>
+              </div>
+                <div class="card-row">
+                <h6>დონორი:</h6>
+                <p>EIB</p>
+              </div>
+              <div class="card-row">
+                <h6>პროგრამა:</h6>
+                <p>GURAD</p>
+              </div>
+               <div class="card-row">
+                <h6>დასახელება:</h6>
+                <p>მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</p>
+              </div>
+               <div class="card-row">
+                <h6>მუციპალიტეტი:</h6>
+                <p>მცხეთა</p>
+              </div>
+              <div class="card-row">
+                <h6>რეგიონი:</h6>
+                <p>მცხეთა-მთიანეთი</p>
+              </div>
+               <div class="card-row">
+                <h6>ტიპოლოგია:</h6>
+                <p>გზები</p>
+              </div>
+               <div class="card-row">
+                <h6>ტიპი:</h6>
+                <p>მშენებლობა</p>
+              </div>
+              <div class="card-row">
+                <h6>დაწყება:</h6>
+                <p>12.10.2019 </p>
+              </div>
+              <div class="card-row">
+                <h6>დასრულება:</h6>
+                <p>04.01.2021 </p>
+              </div>
+                <div class="details">
+             <button type="button" class="btn btn-info px-4" data-toggle="modal" data-target=".bd-example-modal-lg">დეტალურად</button>
+            </div>
+      </div>
+    </div>
+  </div>
+
+<!-- მეორე პროექტი -->
+  <div class="card">
+    <div class="card-header collapsed abortProject"  data-toggle="collapse" data-target="#project_2">
+       <div class="card_title d-flex flex-row  px-3 py-2">
+        <div class="project_id">
+          <p>ID:</p>
+          <span>0301-0076</span>
+        </div>
+
+        <div class="project_status ml-5 d-flex flex-row">
+          <p>სტატუსი:</p>
+          <span>შეწყვეტილი პროექტი</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="project_2" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+        <div class="card-row">
+                <h6>ID:</h6>
+                <p>0301-0076</p>
+              </div>
+              <div class="card-row">
+                <h6>DOC:</h6>
+                <p>DOC</p>
+              </div>
+              <div class="card-row">
+                <h6>სტატუსი:</h6>
+                <p>შეწყვეტილი</p>
+              </div>
+                <div class="card-row">
+                <h6>დონორი:</h6>
+                <p>EIB</p>
+              </div>
+              <div class="card-row">
+                <h6>პროგრამა:</h6>
+                <p>GURAD</p>
+              </div>
+               <div class="card-row">
+                <h6>დასახელება:</h6>
+                <p>მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</p>
+              </div>
+               <div class="card-row">
+                <h6>მუციპალიტეტი:</h6>
+                <p>მცხეთა</p>
+              </div>
+              <div class="card-row">
+                <h6>რეგიონი:</h6>
+                <p>მცხეთა-მთიანეთი</p>
+              </div>
+               <div class="card-row">
+                <h6>ტიპოლოგია:</h6>
+                <p>გზები</p>
+              </div>
+               <div class="card-row">
+                <h6>ტიპი:</h6>
+                <p>მშენებლობა</p>
+              </div>
+              <div class="card-row">
+                <h6>დაწყება:</h6>
+                <p>12.10.2019 </p>
+              </div>
+              <div class="card-row">
+                <h6>დასრულება:</h6>
+                <p>04.01.2021 </p>
+              </div>
+                <div class="details">
+             <button type="button" class="btn btn-info px-4" data-toggle="modal" data-target=".bd-example-modal-lg">დეტალურად</button>
+            </div>
+      </div>
+    </div>
+  </div>
+
+<!-- მესამე პროექტი -->
+  <div class="card">
+    <div class="card-header collapsed completeProject"  data-toggle="collapse" data-target="#project_3">
+        <div class="card_title d-flex flex-row  px-3 py-2">
+        <div class="project_id">
+          <p>ID:</p>
+          <span>0301-0076</span>
+        </div>
+
+        <div class="project_status ml-5 d-flex flex-row">
+          <p>სტატუსი:</p>
+          <span>დასრულებული პროექტი</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="project_3" class="collapse"  data-parent="#accordion">
+      <div class="card-body">
+        <div class="card-row">
+                <h6>ID:</h6>
+                <p>0301-0076</p>
+              </div>
+              <div class="card-row">
+                <h6>DOC:</h6>
+                <p>DOC</p>
+              </div>
+              <div class="card-row">
+                <h6>სტატუსი:</h6>
+                <p>დასრულებული</p>
+              </div>
+                <div class="card-row">
+                <h6>დონორი:</h6>
+                <p>EIB</p>
+              </div>
+              <div class="card-row">
+                <h6>პროგრამა:</h6>
+                <p>GURAD</p>
+              </div>
+               <div class="card-row">
+                <h6>დასახელება:</h6>
+                <p>მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</p>
+              </div>
+               <div class="card-row">
+                <h6>მუციპალიტეტი:</h6>
+                <p>მცხეთა</p>
+              </div>
+              <div class="card-row">
+                <h6>რეგიონი:</h6>
+                <p>მცხეთა-მთიანეთი</p>
+              </div>
+               <div class="card-row">
+                <h6>ტიპოლოგია:</h6>
+                <p>გზები</p>
+              </div>
+               <div class="card-row">
+                <h6>ტიპი:</h6>
+                <p>მშენებლობა</p>
+              </div>
+              <div class="card-row">
+                <h6>დაწყება:</h6>
+                <p>12.10.2019 </p>
+              </div>
+            <div class="card-row">
+                <h6>დასრულება:</h6>
+                <p>04.01.2021 </p>
+            </div>
+            <div class="details">
+             <button type="button" class="btn btn-info px-4" data-toggle="modal" data-target=".bd-example-modal-lg">დეტალურად</button>
+            </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ <!-- დასასრული - პროექტების ჩამონათვალი -->
+
+
+
+<!-- დასაწყისი - დეტალური გვერდის მოდალური ფანჯარა -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal_page">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- დაწყება  კონტენტი -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+      <div class="details_inner pt-2">
+        <div class="details-title d-flex flex-row justify-content-start align-items-center">
+          <p>კონტრაქტორი:</p>
+          <span>შპს "ჯეუ გრუპი"</span>
+        </div>
+        <div class="details_head">
+           <p><span>EIB/MIMP/W/NCB/87-2-2019</span></p>
+            <p>DEP190000075</p>
+            <p>EIB/MIMP/W/NCB/87-2-2019</p>       
+            <p><a href="#">სატენდერო ბმული<i class="fas fa-directions ml-2"></i></a></p>           
+        </div>
+
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="details_amount">
+          <div class="col-12 text-center">
+          <h5>ღირებულება</h5>
+        </div>
+          <div class="details-row">
+            <h6>საწყისი ღირებულება:</h6>
+            <p>12 867 938,35</p>
+          </div>
+           <div class="details-row">
+            <h6>ცვლილება:</h6>
+            <p></p>
+          </div>
+           <div class="details-row">
+            <h6>ჯამური ცვლილება:</h6>
+            <p></p>
+          </div>
+            <div class="details-row">
+            <h6>საბოლოო ღირებულება:</h6>
+            <p><span>12 867 938,35</span></p>
+         </div>
+        </div>
+      </div>
+           <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="details_date">
+          <div class="col-12 text-center">
+          <h5>თარიღი</h5>
+        </div>
+          <div class="details-row">
+            <h6>დაიწყო:</h6>
+            <p>12.10.2019</p>
+          </div>
+           <div class="details-row">
+            <h6>დასრულება:</h6>
+            <p>04.01.2021</p>
+          </div>
+           <div class="details-row">
+            <h6>ჯამური ცვლილება:</h6>
+            <p></p>
+          </div>
+            <div class="details-row">
+            <h6>კონტრაქტის ვადა:</h6>
+            <p></p>
+         </div>
+        </div>
+      </div>
+    </div>
+
       <div class="row">
-        <div class="col-12">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    დასახელება:</div>
-                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
-                  <div class="col-sm-4">მდებარეობა:</div>
-                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
-                  <div class="col-sm-4">ტიპი:</div>
-                  <div class="col-sm-7">გზები, მშენებლობა</div>
-                  <div class="col-sm-4">დაწყება/დასასრული:</div>
-                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
-                  <div class="col-sm-4">პროგრამა:</div>
-                  <div class="col-sm-7">WB</div>
-                  <div class="col-sm-4">დონორი:</div>
-                  <div class="col-sm-7">RDP-III</div>
-                  <div class="col-sm-4">სტატუსი:</div>
-                  <div class="col-sm-7">დასრულებული</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">დაემატა 2 თვის წინ</small>
-                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    დასახელება:</div>
-                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
-                  <div class="col-sm-4">მდებარეობა:</div>
-                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
-                  <div class="col-sm-4">ტიპი:</div>
-                  <div class="col-sm-7">გზები, მშენებლობა</div>
-                  <div class="col-sm-4">დაწყება/დასასრული:</div>
-                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
-                  <div class="col-sm-4">პროგრამა:</div>
-                  <div class="col-sm-7">WB</div>
-                  <div class="col-sm-4">დონორი:</div>
-                  <div class="col-sm-7">RDP-III</div>
-                  <div class="col-sm-4">სტატუსი:</div>
-                  <div class="col-sm-7">დასრულებული</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">დაემატა 2 თვის წინ</small>
-                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    დასახელება:</div>
-                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
-                  <div class="col-sm-4">მდებარეობა:</div>
-                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
-                  <div class="col-sm-4">ტიპი:</div>
-                  <div class="col-sm-7">გზები, მშენებლობა</div>
-                  <div class="col-sm-4">დაწყება/დასასრული:</div>
-                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
-                  <div class="col-sm-4">პროგრამა:</div>
-                  <div class="col-sm-7">WB</div>
-                  <div class="col-sm-4">დონორი:</div>
-                  <div class="col-sm-7">RDP-III</div>
-                  <div class="col-sm-4">სტატუსი:</div>
-                  <div class="col-sm-7">დასრულებული</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">დაემატა 2 თვის წინ</small>
-                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    დასახელება:</div>
-                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
-                  <div class="col-sm-4">მდებარეობა:</div>
-                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
-                  <div class="col-sm-4">ტიპი:</div>
-                  <div class="col-sm-7">გზები, მშენებლობა</div>
-                  <div class="col-sm-4">დაწყება/დასასრული:</div>
-                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
-                  <div class="col-sm-4">პროგრამა:</div>
-                  <div class="col-sm-7">WB</div>
-                  <div class="col-sm-4">დონორი:</div>
-                  <div class="col-sm-7">RDP-III</div>
-                  <div class="col-sm-4">სტატუსი:</div>
-                  <div class="col-sm-7">დასრულებული</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">დაემატა 2 თვის წინ</small>
-                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    დასახელება:</div>
-                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
-                  <div class="col-sm-4">მდებარეობა:</div>
-                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
-                  <div class="col-sm-4">ტიპი:</div>
-                  <div class="col-sm-7">გზები, მშენებლობა</div>
-                  <div class="col-sm-4">დაწყება/დასასრული:</div>
-                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
-                  <div class="col-sm-4">პროგრამა:</div>
-                  <div class="col-sm-7">WB</div>
-                  <div class="col-sm-4">დონორი:</div>
-                  <div class="col-sm-7">RDP-III</div>
-                  <div class="col-sm-4">სტატუსი:</div>
-                  <div class="col-sm-7">დასრულებული</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">დაემატა 2 თვის წინ</small>
-                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-4">
-                    დასახელება:</div>
-                  <div class="col-sm-7">მცხეთის მუნიციპალიტეტში ნაფეტვრებიდან ქვემო წყლულეთამდე მისასვლელი გზის და ლისი-მუხაწყაროს ცენტრალური გზის რეაბილიტაცია</div>
-                  <div class="col-sm-4">მდებარეობა:</div>
-                  <div class="col-sm-7">მცხეთა-მთიანეთი, მცხეთა</div>
-                  <div class="col-sm-4">ტიპი:</div>
-                  <div class="col-sm-7">გზები, მშენებლობა</div>
-                  <div class="col-sm-4">დაწყება/დასასრული:</div>
-                  <div class="col-sm-7">31.10.2018 - 31.10.2020</div>
-                  <div class="col-sm-4">პროგრამა:</div>
-                  <div class="col-sm-7">WB</div>
-                  <div class="col-sm-4">დონორი:</div>
-                  <div class="col-sm-7">RDP-III</div>
-                  <div class="col-sm-4">სტატუსი:</div>
-                  <div class="col-sm-7">დასრულებული</div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">დაემატა 2 თვის წინ</small>
-                <small class="card-text" style="float: right;"><span class="card-text-label"></span><a href="details.html" class="card-link">ვრცლად <i class="fas fa-arrow-right"></i></a></small>
-              </div>
-            </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="details_addmision">
+          <div class="col-12 text-center">
+          <h5>მიღება-ჩაბარება</h5>
+        </div>
+          <div class="details-row">
+            <h6>მიღება-ჩაბარება:</h6>
+            <p></p>
+          </div>
+           <div class="details-row">
+            <h6>საბოლოო ჩაბარება:</h6>
+            <p></p>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-    </section>
+
+   <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="details_work">
+          <div class="col-12 text-center">
+          <h5>ფაქტიური სამუშაოები</h5>
+        </div>
+          <div class="details-row">
+            <h6>დაიწყო:</h6>
+            <p>12.10.2019</p>
+          </div>
+           <div class="details-row">
+            <h6>დასრულება:</h6>
+            <p>04.01.2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mb-2">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="details-other">
+         <div class="col-12 text-center mb-3">
+          <h5>სხვა დეტალები</h5>
+        </div>
+
+        <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>სახაზინო კოდი:</h6>
+          <p>250305</p>
+         </div>
+       </div>
+
+       <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>შესრულება:</h6>
+          <p>3 228 263,40</p>
+          <p>25.09 %</p>
+        </div>
+     </div>
+
+      <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>გადახდა:</h6>
+          <p>4 923 046,03</p>
+          <p>38.26 %</p>
+        </div>
+     </div>
+
+         <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>ავანსი:</h6>
+          <p>2 573 587,67</p>
+         </div>
+       </div>
+
+       <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>დასაქვითი:</h6>
+          <p>1 856 195,80</p>
+        </div>
+     </div>
+
+      <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>რეზერვი სულ:</h6>
+          <p>4 923 046,03</p>
+          <p>161 413,17</p>
+        </div>
+    </div>
+
+      <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>გადასახდელი:</h6>
+          <p>161 413,17</p>
+        </div>
+    </div>
+
+      <div class="col-12 pr-5">
+          <div class="details-row">
+          <h6>ჯამი:</h6>
+          <p></p>
+        </div>
+    </div>
+
+       </div>
+      </div>
+    </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary px-4" data-dismiss="modal">დახურვა</button>
+      </div>
+<!-- დასასრული  კონტენტი-->
+    </div>
+  </div>
+</div>
+<!-- დასასრული - დეტალური გვერდის მოდალური ფანჯარა -->
+
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -698,7 +1013,7 @@ to get the desired effect
     </div>
   </footer>
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
