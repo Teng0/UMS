@@ -991,8 +991,360 @@ to get the desired effect
 
       </div>
     </div>
+
+<!-- დასაწყისი -  მოდალური ფანჯრის ტაბ პანელი -->
+  <div id="more_details">
+   <ul class="nav nav-tabs border py-2" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="gadaxdebi-tab" data-toggle="tab" href="#gadaxdebi" role="tab" aria-controls="gadaxdebi" aria-selected="true">გადახდები</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pays-tab" data-toggle="tab" href="#pays" role="tab" aria-controls="pays" aria-selected="false">გადახდები წლების მიხედვით</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="vadis_cvlileba-tab" data-toggle="tab" href="#vadis_cvlileba" role="tab" aria-controls="vadis_cvlileba" aria-selected="false">ღირებულებისა და ვადის ცვლილება</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="mivlineba-tab" data-toggle="tab" href="#mivlineba" role="tab" aria-controls="mivlineba" aria-selected="false">მივლინება</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="tenderi-tab" data-toggle="tab" href="#tenderi" role="tab" aria-controls="tenderi" aria-selected="false">ტენდერი</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" id="garantiebi-tab" data-toggle="tab" href="#garantiebi" role="tab" aria-controls="garantiebi" aria-selected="false">გარანტიები</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" id="pasuxismgebeli-tab" data-toggle="tab" href="#pasuxismgebeli" role="tab" aria-controls="pasuxismgebeli" aria-selected="false">პასუხიმგებელი</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" id="proeqtis_agwera-tab" data-toggle="tab" href="#proeqtis_agwera" role="tab" aria-controls="proeqtis_agwera" aria-selected="false">პროექტის აღწერა</a>
+  </li>
+      <li class="nav-item">
+    <a class="nav-link" id="detalebi-tab" data-toggle="tab" href="#detalebi" role="tab" aria-controls="detalebi" aria-selected="false">დეტალები</a>
+  </li>
+</ul>
+
+     <!-- დასაწყისი - ტაბ კონტენტი -->
+<div class="tab-content border mt-2" id="myTabContent">
+  <!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade show active" id="gadaxdebi" role="tabpanel" aria-labelledby="gadaxdebi-tab">
+<div class="row">
+                  <div class="card-header">
+                    <h3 class="card-title">გადახდები</h3>
+                  </div>
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover  text-nowrap">    
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>ტიპი</th>
+                          <th>N</th>
+                          <th>თარიღი</th>
+                          <th>წარმოდგენილი</th>
+                          <th>ავანსი</th>
+                          <th>რეზერვი</th>
+                          <th>გადასახდელი</th>
+                          <th>დონორი</th>
+                          <th>სახელმწიფო</th>
+                          <th>მუნიციპალიტეტი</th>
+                          <th>გადახდილი</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>შსა</td>
+                          <td>01</td>
+                          <td>12.12.2018</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                        </tr>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>შსა</td>
+                          <td>01</td>
+                          <td>12.12.2018</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                        </tr>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>შსა</td>
+                          <td>01</td>
+                          <td>12.12.2018</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                          <td>0,00</td>
+                          <td>6 400,00</td>
+                        </tr>
+                      </tbody>
+                    </table>      
+                  </div>
+           </div>
+
   </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="pays" role="tabpanel" aria-labelledby="pays-tab">
+    <div class="row">
+                  <div class="card-header">
+                    <h3 class="card-title">გადახდები წლების მიხედვით</h3>
+                  </div>
+                  <div class="card-body table-responsive p-0">
+                   <table class="table table-hover text-nowrap">   
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>წელი</th>
+                          <th>დონორი</th>
+                          <th>სახელმწიფო</th>
+                          <th>მინიპალიტეტი</th>
+                          <th>მგფ</th>
+                          <th>სულ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>0301-0076</td>
+                          <td>2020</td>
+                          <td>1 881 087,78  </td>
+                          <td>338 595,80  </td>
+                          <td>0,00</td>
+                          <td>0,00</td>
+                          <td>2 219 683,58  </td>
+                        </tr>
+                        <tr>
+                          <td>0301-0076 </td>
+                          <td>2019</td>
+                          <td>2 290 985,13</td>
+                          <td>412 377,32  </td>
+                          <td>0,00</td>
+                          <td>0,00</td>
+                          <td>2 703 362,45</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+           </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="vadis_cvlileba" role="tabpanel" aria-labelledby="vadis_cvlileba-tab">
+    <div class="row">
+                        <div class="card-header">
+                    <h3 class="card-title">ღირებულების და ვადის ცვლილება</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>ცლილებები</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>NO DATA YET</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="mivlineba" role="tabpanel" aria-labelledby="mivlineba-tab">
+    <div class="row">
+                <div class="card-header">
+                    <h3 class="card-title">მივლინება</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>ზედამხედველი</th>
+                          <th>ტელეფონი</th>
+                          <th>მივლ. დაწყება</th>
+                          <th>მივლ. დასრულება</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>NO DATA YET</td>
+                          <td>NO DATA YET</td>
+                          <td>NO DATA YET</td>
+                          <td>NO DATA YET</td>
+                          <td>NO DATA YET</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="tenderi" role="tabpanel" aria-labelledby="tenderi-tab">
+    <div class="row">
+                        <div class="card-header">
+                    <h3 class="card-title">ტენდერი</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>გამოცხადების თარიღი</th>
+                          <th>მიღების დაწყება</th>
+                          <th>მიღების დასრულება</th>
+                          <th>ტენდერის გახსნა</th>
+                          <th>გახსნის ადგილი</th>
+                          <th>შეფასების თარიღი</th>
+                          <th>SPA LINK</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>28.09.2018</td>
+                          <td>07.10.2018</td>
+                          <td>10.10.2018</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><a href="https://tenders.procurement.gov.ge/public/?go=280332&lang=ge">ბმული</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="garantiebi" role="tabpanel" aria-labelledby="garantiebi-tab">
+    <div class="row">
+                        <div class="card-header">
+                    <h3 class="card-title">გარანტიები</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>გარანტიები</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>NO DATA YET</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="pasuxismgebeli" role="tabpanel" aria-labelledby="pasuxismgebeli-tab">
+    <div class="row">
+                        <div class="card-header">
+                    <h3 class="card-title">პასუხისმგებელი</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>PRJ Code</th>
+                          <th>სამსახური</th>
+                          <th>გვარი, სახელი</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>პროგრამის კოორდინატორი</td>
+                          <td>დევიძე აკაკი</td>
+                        </tr>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>პროგრამის კოორდინატორი</td>
+                          <td>დევიძე აკაკი</td>
+                        </tr>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>პროგრამის კოორდინატორი</td>
+                          <td>დევიძე აკაკი</td>
+                        </tr>
+                        <tr>
+                          <td>0707-0028</td>
+                          <td>პროგრამის კოორდინატორი</td>
+                          <td>დევიძე აკაკი</td>
+                        </tr>                        
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="proeqtis_agwera" role="tabpanel" aria-labelledby="proeqtis_agwera-tab">
+    <div class="row">
+                        <div class="card-header">
+                    <h3 class="card-title">პროექტის აღწერა</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>სამუშაოების აღწერა</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Work Description</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+<!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  <div class="tab-pane fade" id="detalebi" role="tabpanel" aria-labelledby="detalebi-tab">
+    <div class="row">
+                        <div class="card-header">
+                    <h3 class="card-title">დეტალები</h3>
+                  </div> 
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>დეტალები</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>NO DATA YET</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+    </div>
+  </div>
+  <!-- ////////////////////////////// - Divider -  /////////////////////////////////////// -->
+  </div>
+
+  </div>
+
+<!-- დასასრული -  მოდალური ფანჯრის ტაბ პანელი -->
 </div>
+
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary px-4" data-dismiss="modal">დახურვა</button>
       </div>
@@ -1004,6 +1356,10 @@ to get the desired effect
 
     <!-- /.content -->
   </div>
+
+</div>
+</div>
+
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <strong>Copyright &copy; 2020 <a href="http://mi-un.ge/ums/">Mi-Un.Ge</a>.</strong>
@@ -1024,3 +1380,4 @@ to get the desired effect
 <script src="../plugins/chart.js/Chart.min.js"></script>
 <script src="../dist/js/demo.js"></script>
 <script src="../dist/js/pages/dashboard3.js"></script>
+

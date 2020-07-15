@@ -21,6 +21,7 @@
     margin: auto;
     padding: 5px 10px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.08);
 }
 #filter select
 {
@@ -186,6 +187,7 @@ input::-webkit-calendar-picker-indicator {
 
 
 /*დაწყება დეტალური გვერდის მოდალური ფანჯარა*/
+
 #modal_page .details_inner .details-title
 {
   background-color: #ffff;
@@ -221,7 +223,11 @@ input::-webkit-calendar-picker-indicator {
 	font-weight: 600;
 	font-size: 15px;
 	margin-bottom: 20px;
-	display: inline-block;
+	display: block;
+	padding: 7px 0px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #17a2b8;
 }
 #modal_page  .details_inner .details-title p
 {
@@ -277,7 +283,55 @@ input::-webkit-calendar-picker-indicator {
 {
   height: 150px;
 }
+
+
+/*ტაბ-კონტენტი*/
+#more_details
+{
+	overflow: hidden;
+	padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, .12);
+}
+#more_details .nav-tabs
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 10px rgba(0,0,0, .12);
+}
+#more_details .nav-tabs .nav-item .nav-link 
+{
+	text-align: center;
+	min-width: 160px;
+	margin-right:  15px;
+	margin-bottom: 10px;
+	border: 1px solid #F1F1F1;
+	color: #000;
+	font-size: 0.9rem;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #17a2b8;
+	font-weight: 400;
+}
+#more_details .nav-tabs .nav-item .nav-link.active,
+#more_details .nav-tabs .nav-item .nav-link:hover
+{
+	border: 1px solid #34495e;
+	box-shadow: 2px 2px 10px rgba(0,0,0, .2);
+}
+
+
+#more_details  .tab-content
+{
+	overflow: hidden;
+	box-shadow: 2px 2px 10px rgba(0,0,0, .12);
+}
 /*დასასრული დეტალური გვერდის მოდალური ფანჯარა*/
+
+
+
+
 
 
 
