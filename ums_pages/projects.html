@@ -32,6 +32,39 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
+    .container-fluid h3 {
+      text-align: center;
+      margin: 20px 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #2E86C1;
+      color: white;
+    }
+
+    .container-fluid input {
+        border: none;
+        outline: none;
+        border-radius: none;
+        border-bottom: 1px solid #707B7C;
+        width: 100%;
+    }
+
+    .container-fluid input:focus {
+        border: none;
+        outline: none;
+        border-radius: none;
+        border-bottom: 3px solid #2E86C1;
+    }
+
+    .container-fluid input::placeholder {
+       color: #1B2631;
+    }
+
+    .container-fluid input:focus::placeholder {
+        text-align: right;
+        position: fixed;
+        color: #2E86C1;
+    }
     @media (max-width: 1360px){
       div.card-deck {
         display: grid;
@@ -519,6 +552,7 @@ to get the desired effect
             <h1>პროექტები</h1>
           </div>
           <div class="col-sm-6">
+            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#adding_projects">პროექტის დამატება</button>
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">მთავარი</a></li>
               <li class="breadcrumb-item active">პროექტები</li>
@@ -1346,6 +1380,7 @@ to get the desired effect
 
 
       <div class="modal-footer">
+        <button id="editButton" type="button" class="btn btn-primary" onclick="editDetails()">რედაქტირება</button>
         <button type="button" class="btn btn-secondary px-4" data-dismiss="modal">დახურვა</button>
       </div>
 <!-- დასასრული  კონტენტი-->
@@ -1358,6 +1393,101 @@ to get the desired effect
   </div>
 
 </div>
+</div>
+  <!-- დამატება ოვერლეი -->
+
+<div id="adding_projects" class="modal fade add-project rounded" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+  <div class="container-fluid">
+    <h3 class="rounded">პროექტის დამატება</h3>
+    <div class="container mt-3"> 
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_ID" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="ID">
+        </div>
+        <div class="col-md-0">
+        </div>
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_DOC" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="DOC">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+          <input class="adding_field" class="adding_field" type="text" id="project_status" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="სტატუსი">
+        </div>
+        <div class="col-md-0">
+        </div>
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_donor" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="დონორი">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_programm" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="პროგრამა">
+        </div>
+        <div class="col-md-0">
+        </div>
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_name" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="დასახელება">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_municipality" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="მუნიციპალიტეტი">
+        </div>
+        <div class="col-md-0">
+        </div>
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_region" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="რეგიონი">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_typology" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="ტიპოლოგია">
+        </div>
+        <div class="col-md-0">
+        </div>
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_type" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="ტიპი">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_start" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="დაწყება">
+        </div>
+        <div class="col-md-0">
+        </div>
+        <div class="col col-lg-6">
+          <input class="adding_field" type="text" id="project_end" class="form-control rounded-0" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="დასრულება">
+        </div>
+      </div>
+    </div>
+    
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="addNewProject()">დამატება</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="cancelAdding()">გაუქმება</button>
+        <button type="button" class="btn btn-secondary px-4" data-dismiss="modal">დახურვა</button>
+      </div>
+    </div>
+  </div>
 </div>
 
   <!-- /.content-wrapper -->
@@ -1375,6 +1505,7 @@ to get the desired effect
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
 <script src="../dist/js/adminlte.js"></script>
+<script src="../dist/js/details.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
 <script src="../plugins/chart.js/Chart.min.js"></script>
