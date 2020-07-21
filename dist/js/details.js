@@ -126,16 +126,23 @@ function editDetails() {
   let editableHeadChilds = document.getElementsByClassName("details_head")[0]
     .childElementCount;
 
-
   if (editButton.innerHTML === "რედაქტირება") {
     let paragraph = editableHead[0].children[0];
     let input = document.createElement("input");
+    input.setAttribute(
+      "style",
+      "margin-bottom:10px; padding:5px; border: none;"
+    );
     let paragraphText = paragraph.children[0].innerHTML;
     input.setAttribute("value", paragraphText);
     editableHead[0].replaceChild(input, paragraph);
     for (let i = 1; i < editableHeadChilds - 1; i++) {
       let paragraph = editableHead[0].querySelector("p");
       let input = document.createElement("input");
+      input.setAttribute(
+        "style",
+        "margin-bottom:10px; padding:5px; border: none;"
+      );
       let paragraphText = paragraph.innerHTML;
       input.setAttribute("value", paragraphText);
       editableHead[0].replaceChild(input, paragraph);
@@ -144,39 +151,64 @@ function editDetails() {
     for (let i = 0; i < editableText.length; i++) {
       let paragraph = editableText[i].children;
 
-      for (let j = 1; j < editableText[i].childElementCount; j++) {
+      if (i === 3) {
         let input = document.createElement("input");
-        let paragraphText = paragraph[j].innerHTML;
+        input.setAttribute(
+          "style",
+          "margin-bottom:10px; padding:5px; border: none;"
+        );
+        console.log(paragraph[1].children[0].innerHTML);
+        let paragraphText = paragraph[1].children[0].innerHTML;
         input.setAttribute("value", paragraphText);
-        editableText[i].replaceChild(input, paragraph[j]);
+        editableText[i].replaceChild(input, paragraph[1]);
+      } else {
+        for (let j = 1; j < editableText[i].childElementCount; j++) {
+          let input = document.createElement("input");
+          input.setAttribute(
+            "style",
+            "margin-bottom:10px; padding:5px; border: none;"
+          );
+          let paragraphText = paragraph[j].innerHTML;
+          input.setAttribute("value", paragraphText);
+          editableText[i].replaceChild(input, paragraph[j]);
+        }
       }
     }
     editButton.innerHTML = "შენახვა";
   } else {
-      
     let input = editableHead[0].children[0];
     let span = document.createElement("span");
     let paragraph = document.createElement("p");
     span.appendChild(paragraph);
     paragraph.innerHTML = input.value;
-    editableHead[0].replaceChild(span,input);
-  for(let i=1; i<editableHeadChilds - 1;i++){
-    let input = editableHead[0].querySelector("input");
-    let paragraph = document.createElement("p");
-    paragraph.innerHTML = input.value;
-    editableHead[0].replaceChild(paragraph,input);
- }
+    editableHead[0].replaceChild(span, input);
+    for (let i = 1; i < editableHeadChilds - 1; i++) {
+      let input = editableHead[0].querySelector("input");
+      let paragraph = document.createElement("p");
+      paragraph.innerHTML = input.value;
+      editableHead[0].replaceChild(paragraph, input);
+    }
 
-
-  for(let i=0; i<editableText.length;i++){
-     let input = editableText[i].children;
-     
-     for(let j=1; j<editableText[i].childElementCount;j++) {
+    for (let i = 0; i < editableText.length; i++) {
+      let input = editableText[i].children;
+      if (i === 3) {
+        let input = editableText[i].children[1];
+        console.log(input);
         let paragraph = document.createElement("p");
-        paragraph.innerHTML = input[j].value;
-        editableText[i].replaceChild(paragraph,input[j]);
-     }
-  }
-  editButton.innerHTML = "რედაქტირება";
+        let span = document.createElement("span");
+        span.appendChild(paragraph);
+        paragraph.innerHTML = input.value;
+        editableText[i].replaceChild(span, input);
+      } else {
+        for (let j = 1; j < editableText[i].childElementCount; j++) {
+          let paragraph = document.createElement("p");
+          let span = document.createElement("span");
+          span.appendChild(paragraph);
+          paragraph.innerHTML = input[j].value;
+          editableText[i].replaceChild(paragraph, input[j]);
+        }
+      }
+    }
+    editButton.innerHTML = "რედაქტირება";
   }
 }
