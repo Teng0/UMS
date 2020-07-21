@@ -281,7 +281,7 @@ input::-webkit-calendar-picker-indicator {
 .details_work,
 .details_addmision
 {
-  height: 150px;
+  height: auto;
 }
 
 
